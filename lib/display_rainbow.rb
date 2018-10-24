@@ -1,7 +1,14 @@
 def display_rainbow(colors)
-    color_string = ""
-    colors.each do |color|
-      color_string << " #{color[0][0].upcase}: #{color},"
-    end
-    puts color_string.strip.chop
+  print "#{colors[0][0].upcase}: #{colors[0]}, "
+  print "#{colors[1][0].upcase}: #{colors[1]}, "
+  print "#{colors[2][0].upcase}: #{colors[2]}, "
+  print "#{colors[3][0].upcase}: #{colors[3]}, "
+  print "#{colors[4][0].upcase}: #{colors[4]}, "
+  print "#{colors[5][0].upcase}: #{colors[5]}, "
+  print "#{colors[6][0].upcase}: #{colors[6]}, "
+  print "#{colors[7][0].upcase}: #{colors[7]}"
 end
+
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+display_rainbow(colors)
